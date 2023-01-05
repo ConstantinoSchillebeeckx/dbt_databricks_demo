@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: zip_pr
+    description: Zipcodes limited to PR
+    columns:
+      - name: zip
+        description: The zipcode
+        tests:
+          - not_null

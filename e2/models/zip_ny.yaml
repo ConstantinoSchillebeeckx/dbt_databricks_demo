@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: zip_ny
+    description: Zipcodes limited to NY
+    columns:
+      - name: zip
+        description: The zipcode
+        tests:
+          - not_null
