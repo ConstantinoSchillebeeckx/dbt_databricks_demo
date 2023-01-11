@@ -1,6 +1,6 @@
 def model(dbt, session):
-    # this config doesn't work with python
-    dbt.config(location_root="s3://foo/bar")
+    # location_root doesn't work with python
+    dbt.config(location_root="s3://foo/bar", create_notebook=True)
 
     df = dbt.ref("uszips")
 
